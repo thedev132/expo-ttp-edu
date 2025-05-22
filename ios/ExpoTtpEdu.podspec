@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
     :tvos => '15.1'
   }
   s.swift_version  = '5.4'
-  s.source         = { git: 'https://github.com/thedev132/expo-ttp-edu' }
+  s.source         = { git: 'https://github.com/thedev132/expo-ttp-edu', tag: "#{s.version}" }
   s.static_framework = true
 
   s.dependency 'ExpoModulesCore'
@@ -23,7 +23,9 @@ Pod::Spec.new do |s|
   # Swift/Objective-C compatibility
   s.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES',
+    'SWIFT_COMPILATION_MODE' => 'wholemodule'
   }
 
   s.source_files = "**/*.{h,m,mm,swift,hpp,cpp}"
+  s.frameworks   = "ProximityReader"
 end

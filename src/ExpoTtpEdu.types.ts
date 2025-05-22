@@ -17,3 +17,11 @@ export type ExpoTtpEduViewProps = {
   onLoad: (event: { nativeEvent: OnLoadEventPayload }) => void;
   style?: StyleProp<ViewStyle>;
 };
+
+export interface ExpoTtpEduOptions {
+  uiMode?: 'light' | 'dark';
+}
+
+export interface ExpoTtpEduModule {
+  showTapToPayEducation(options?: ExpoTtpEduOptions): Promise<void>;
+}

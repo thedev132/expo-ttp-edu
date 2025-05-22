@@ -1,6 +1,6 @@
 {
   "name": "expo-ttp-edu",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "description": "Apple Tap to Pay Educational Models for Merchants",
   "main": "build/index.js",
   "types": "build/index.d.ts",

@@ -1,9 +1,6 @@
 {
-  "platforms": ["apple", "android", "web"],
+  "platforms": ["apple"],
   "apple": {
     "modules": ["ExpoTtpEduModule"]
-  },
-  "android": {
-    "modules": ["expo.modules.ttpedu.ExpoTtpEduModule"]
   }
 }

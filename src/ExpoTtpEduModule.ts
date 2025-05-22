@@ -1,12 +1,8 @@
-import { NativeModule, requireNativeModule } from 'expo';
+import { requireNativeModule } from 'expo-modules-core';
+import { ExpoTtpEduModule, ExpoTtpEduOptions } from './ExpoTtpEdu.types';
 
-import { ExpoTtpEduModuleEvents } from './ExpoTtpEdu.types';
-
-declare class ExpoTtpEduModule extends NativeModule<ExpoTtpEduModuleEvents> {
-  PI: number;
-  hello(): string;
-  setValueAsync(value: string): Promise<void>;
-}
-
-// This call loads the native module object from the JSI.
 export default requireNativeModule<ExpoTtpEduModule>('ExpoTtpEdu');
+
+export function showTapToPayEducation(options?: ExpoTtpEduOptions): Promise<void> {
+  return requireNativeModule<ExpoTtpEduModule>('ExpoTtpEdu').showTapToPayEducation(options);
+}
