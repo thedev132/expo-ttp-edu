@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-ttp-edu": ["../src/index"],
+      "expo-ttp-edu/*": ["../src/*"]
+    }
+  }
+}

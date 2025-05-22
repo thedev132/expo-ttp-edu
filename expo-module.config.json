@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android", "web"],
+  "apple": {
+    "modules": ["ExpoTtpEduModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.ttpedu.ExpoTtpEduModule"]
+  }
+}
